@@ -195,7 +195,7 @@ nav svg{
 
 
 /*Header  calc(1.5 * clamp(.75rem, 1.5vw + .5rem, 2.5rem) + min(1.25rem, 12.5vw));calc(1.5 * clamp(.75rem, 1.5vw + .5rem, 2.5rem) + min(2.75rem, 17.5vw))*/
-#myHeader {
+#Home {
   scroll-margin-top: calc(var(--h1h) + var(--m));
   margin: var(--l) var(--Hm) var(--xxxxl) var(--Hm);
   width: var(--Hw);
@@ -206,70 +206,70 @@ nav svg{
     "me aff";
   column-gap: var(--s);
 }
-#myHeader .me{
+#Home .me{
   grid-area: me;
   align-items: center;
   border-radius: 25%;
   max-width: 100%;
   corner-shape: squircle;
 }
-#myHeader .name{
+#Home .name{
   grid-area: name;
   margin-left: var(--Nm);
   margin-top: auto;
   margin-right: auto;
 }
-#myHeader .aff{
+#Home .aff{
   grid-area: aff;
   margin-top: auto;
   margin-left: var(--Nm);
 }
-#myHeader svg{ 
+#Home svg{ 
   display:inline-block;
   vertical-align:middle;
   fill: var(--Accent_light);
   height: calc(.7 * var(--plh));
   margin-bottom: calc( .2* var(--plh));
 }
-#myHeader a svg:hover{ 
+#Home a svg:hover{ 
   scale: 1.1;
   fill: var(--Accent);
 }
-#myHeader a:hover{
+#Home a:hover{
   text-decoration: none;
 }
-#myHeader p{
+#Home p{
   font: var(--pl);
   color: var(--Accent_light);
   margin: 0;
   margin-top: var(--m);
 }
-#myHeader a svg{
+#Home a svg{
   display:inline-block;
   vertical-align:middle;
   fill: var(--Accent_light);
   height: calc( 1.4 * var(--plh));
 }
 
-#about{
+#Aboutme{
   width: var(--Cw);
   scroll-margin-top: var(--m);
   padding: var(--xl) var(--l) var(--xl) var(--l);
 }
-#about .pad{
+#Aboutme .pad{
   padding-bottom:0;
 } 
 
 
 
 
-#pub{
+#Publications{
   width: var(--Cw);
   scroll-margin-top: var(--m);
   padding: var(--xl) var(--l) var(--xl) var(--l);
   color: var(--Text_color);
 }
-#pub li{
+#Publications li{
   font: var(--p);
   margin: var(--m);
 }
@@ -279,26 +279,26 @@ nav svg{
   padding: var(--l);
   border-radius: var(--xl);
 }
-#pub .title{
+#Publications .title{
   margin: var(--m) auto var(--xs) var(--s);
 }
-#pub .authors{
+#Publications .authors{
   color: var(--Text_color_muted);
   opacity: .8;
   margin: var(--xs) auto var(--m) var(--s);
 }
-#pub .Journal{
+#Publications .Journal{
   color: var(--Text_color_muted);
   opacity: .8;
   margin: var(--m) auto var(--m) var(--s);
 }
-#pub a svg{ 
+#Publications a svg{ 
   display:inline-block;
   vertical-align:middle;
   fill: var(--Accent_light);
   height: var(--ph);
 }
-#pub a svg:hover{ 
+#Publications a svg:hover{ 
   scale: 1.1;
   fill: var(--Accent);
 }
@@ -331,7 +331,7 @@ a:active {
 }
 
 @media screen  and (max-width: 687px){
-  #myHeader {
+  #Home {
   margin: var(--l) auto var(--l) auto;
   width: 80%;
   display: grid;
@@ -341,16 +341,16 @@ a:active {
     "aff aff";
   column-gap: var(--s);
   }
-  #myHeader .name{
+  #Home .name{
   margin: auto;
   }
-#myHeader .aff{
+#Home .aff{
   grid-area: aff;
   margin: 0;
   } 
 }
 @media screen  and (max-width: 649px){/*439px){*/
-  #myHeader {
+  #Home {
   margin: var(--l) 0 var(--xxl) 0;
   padding: 0 var(--m);
   width: 100%;
@@ -363,35 +363,35 @@ a:active {
     "aff";
   column-gap: 0;
   }
-  #myHeader .me{
+  #Home .me{
   margin: 0 auto;
   max-width: min(192px, 60%);
   border-radius: 50%;
   corner-shape: round;
   }
-  #myHeader .name{
+  #Home .name{
   margin: 0;
   margin-top: var(--s);
   text-align: center;
   }
-  #myHeader .aff{
+  #Home .aff{
   grid-area: aff;
   margin: 0;
   text-align: center;
   } 
-  #about{
+  #Aboutme{
   width: fit-content;
   padding: var(--xl) 0 var(--xl) 0;
   }
-  #about .pad{
+  #Aboutme .pad{
   padding-left:var(--xxs);
   padding-right:var(--xxs);
   } 
-  #pub{
+  #Publications{
   width: fit-content;
   padding: var(--xl) 0 0 0;
   }
-  #pub .pad{
+  #Publications .pad{
   padding-left:0;
   padding-right:0;
   } 
@@ -403,14 +403,14 @@ a:active {
 }
 }
 @media screen  and (min-width: 1900px){
-  #about{
+  #Aboutme{
   max-width: 90%;
   padding: var(--xl) var(--xxl) ;
   }
   .pad{
   padding: var(--l) var(--xxl);
   }
-  #pub{
+  #Publications{
   max-width: 95vw;
   padding: var(--xl) var(--xxl);
   }
@@ -420,14 +420,14 @@ a:active {
   padding: var(--xxl);
   border-radius: var(--l);
   }
-  #pub li{
+  #Publications li{
     font: var(--p);
     margin: var(--xl);
   }
 }
 
 @media screen and ( max-width: 649px ){
-  #myHeader {
+  #Home {
   scroll-margin-top: var(--xxxl);
   margin-top: var(--xs);
   }
