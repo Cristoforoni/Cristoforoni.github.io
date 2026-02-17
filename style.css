@@ -251,12 +251,12 @@ nav svg{
   height: calc( 1.4 * var(--plh));
 }
 
-#Aboutme{
+#AboutMe{
   width: var(--Cw);
   scroll-margin-top: var(--m);
   padding: var(--xl) var(--l) var(--xl) var(--l);
 }
-#Aboutme .pad{
+#AboutMe .pad{
   padding-bottom:0;
 } 
 
@@ -379,11 +379,11 @@ a:active {
   margin: 0;
   text-align: center;
   } 
-  #Aboutme{
+  #AboutMe{
   width: fit-content;
   padding: var(--xl) 0 var(--xl) 0;
   }
-  #Aboutme .pad{
+  #AboutMe .pad{
   padding-left:var(--xxs);
   padding-right:var(--xxs);
   } 
@@ -403,7 +403,7 @@ a:active {
 }
 }
 @media screen  and (min-width: 1900px){
-  #Aboutme{
+  #AboutMe{
   max-width: 90%;
   padding: var(--xl) var(--xxl) ;
   }
@@ -516,3 +516,4 @@ a:active {
 .Jref-card::-webkit-scrollbar-thumb{
   background-color: var(--Bg_light);
 }
+
